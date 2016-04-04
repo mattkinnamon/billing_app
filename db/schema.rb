@@ -11,27 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160404124845) do
+ActiveRecord::Schema.define(version: 20160404183455) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-    t.string   "company_name"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "companies_name"
     t.string   "address"
-    t.string   "contact"
-    t.string   "email1"
-    t.string   "street_address"
-    t.string   "city"
-    t.string   "state"
-    t.integer  "zip"
-    t.boolean  "taxable"
-    t.string   "billing_rate"
-    t.string   "terms"
-    t.integer  "phone"
-    t.string   "domain"
-    t.integer  "purchase_order"
+    t.string   "companies_contact_name"
+    t.string   "companies_contact_email"
+    t.string   "companies_street_address"
+    t.string   "companies_city"
+    t.string   "companies_state"
+    t.integer  "companies_zip"
+    t.boolean  "companies_taxable"
+    t.string   "companies_billing_rate"
+    t.string   "companies_terms"
+    t.integer  "companies_contact_phone"
+    t.string   "companies_domain"
+    t.integer  "companies_purchase_order"
   end
 
 end

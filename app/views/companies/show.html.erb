@@ -1,23 +1,22 @@
-<!--
-<h1><%= @company.title %></h1>
--->
-<h1><%= @company.company_name %></h1>
+<h1><%= @company.companies_name %></h1>
 <div>
   <p>
-    Contact: <%= @company.contact %><br>
-    Domain: <%= @company.domain %><br>
-  	Phone: <%= @company.phone %><br>
-    Email: <%= @company.email1 %>
+    Domain: <%= @company.companies_domain %>
+  </p>
+  <p><strong>Contact Person:</strong><br>
+    Contact Name: <%= @company.companies_contact_name %><br>
+  	Contact Phone: <%= @company.companies_contact_phone %><br>
+    Contact Email: <%= @company.companies_contact_email %>
   </p>
   <p><strong>Address:</strong><br>
-  	<%= @company.street_address %><br>
-  	<%= @company.city %>, <%= @company.state %> <%= @company.zip %>
+  	<%= @company.companies_street_address %><br>
+  	<%= @company.companies_city %>, <%= @company.companies_state %> <%= @company.companies_zip %>
   </p>
   <p><strong>Billing Details:</strong><br>
-  	Taxable: <%= @company.taxable %><br>
-  	Billing Rate: <%= @company.billing_rate %><br>
-    Purchase Order: <%= @company.purchase_order %><br>
-  	Terms: <%= @company.terms %>
+  	Taxable: <%= @company.companies_taxable %><br>
+  	Billing Rate: <%= @company.companies_billing_rate %><br>
+    Purchase Order: <%= @company.companies_purchase_order %><br>
+  	Terms: <%= @company.companies_terms %>
   </p>
  </div>
 

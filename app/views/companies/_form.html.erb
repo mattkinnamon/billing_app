@@ -1,42 +1,43 @@
 <%= form_for @company do |f| %>
 
-<%= f.label :company_name, 'Company Name' %><br>
-<%= f.text_field :company_name %><br>
+<%= f.label :companies_name, 'Company Name' %><br>
+<%= f.text_field :companies_name %><br>
 <br>
-<%= f.label :contact %><br>
-<%= f.text_field :contact %><br>
+<%= f.label :companies_domain, 'Domain' %><br>
+<%= f.text_field :companies_domain %><br>
 <br>
-<%= f.label :domain %><br>
-<%= f.text_field :domain %><br>
+<%= f.label :companies_contact_name, 'Contact Name' %><br>
+<%= f.text_field :companies_contact_name %><br>
 <br>
-<%= f.label :phone %><br>
-<%= f.text_field :phone %><br>
+<%= f.label :companies_contact_phone, 'Contact Phone' %><br>
+<%= f.text_field :companies_contact_phone %><br>
 <br>
-<%= f.label :email1, 'Email' %><br>
-<%= f.text_field :email1 %><br>
+<%= f.label :companies_contact_email, 'Contact Email' %><br>
+<%= f.text_field :companies_contact_email %><br>
 <br>
-<%= f.label :street_address, 'Street Address' %><br>
-<%= f.text_field :street_address %><br>
+<%= f.label :companies_street_address, 'Street Address' %><br>
+<%= f.text_field :companies_street_address %><br>
 <br>
-<%= f.label :city %><br>
-<%= f.text_field :city %><br>
+<%= f.label :companies_city %><br>
+<%= f.text_field :companies_city %><br>
 <br>
-<%= f.label :state %><br>
-<%= f.text_field :state %><br>
+<%= f.label :companies_state %><br>
+<%= f.text_field :companies_state %><br>
 <br>
-<%= f.label :zip %><br>
-<%= f.text_field :zip %><br>
+<%= f.label :companies_zip %><br>
+<%= f.text_field :companies_zip %><br>
 <br>
-<%= f.label :taxable %><br>
-<%= f.select :taxable, [['Yes', true], ['No', false]] %><br>
+<%= f.label :companies_taxable %><br>
+<%= f.select :companies_taxable, [['Yes', true], ['No', false]] %><br>
 <br>
-<%= f.label :billing_rate, 'Billing Rate' %><br>
-<%= f.select :billing_rate, [['Standard', 'standard'], ['Custom', 'custom']] %><br><br>
-<%= f.label :terms %><br>
-<%= f.select :terms, [['Net 30', 30], ['Net 60', 60], ['Net 90', 90]] %><br>
+<%= f.label :companies_billing_rate, 'Billing Rate' %><br>
+<%= f.select :companies_billing_rate, [['Standard', 'standard'], ['Custom', 'custom']] %><br>
 <br>
-<%= f.label :purchase_order %><br>
-<%= f.text_field :purchase_order %><br>
+<%= f.label :companies_terms %><br>
+<%= f.select :companies_terms, [['Net 30', 30], ['Net 60', 60], ['Net 90', 90]] %><br>
+<br>
+<%= f.label :companies_purchase_order %><br>
+<%= f.text_field :companies_purchase_order %><br>
 <br>
 
 <%= f.submit %>
