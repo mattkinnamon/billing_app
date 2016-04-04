@@ -1,0 +1,26 @@
+<!--
+<h1><%= @company.title %></h1>
+-->
+<h1><%= @company.company_name %></h1>
+<div>
+  <p>
+    Contact: <%= @company.contact %><br>
+    Domain: <%= @company.domain %><br>
+  	Phone: <%= @company.phone %><br>
+    Email: <%= @company.email1 %>
+  </p>
+  <p><strong>Address:</strong><br>
+  	<%= @company.street_address %><br>
+  	<%= @company.city %>, <%= @company.state %> <%= @company.zip %>
+  </p>
+  <p><strong>Billing Details:</strong><br>
+  	Taxable: <%= @company.taxable %><br>
+  	Billing Rate: <%= @company.billing_rate %><br>
+    Purchase Order: <%= @company.purchase_order %><br>
+  	Terms: <%= @company.terms %>
+  </p>
+ </div>
+
+<%= link_to "Edit Company", edit_company_path(@company) %>
+
+<%= link_to "Delete Company", company_path(@company), method: :Delete, data: { confirm: "Are you sure?"} %>
