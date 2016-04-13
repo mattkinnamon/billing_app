@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160404183455) do
+ActiveRecord::Schema.define(version: 20160404193132) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "title"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(version: 20160404183455) do
     t.integer  "companies_contact_phone"
     t.string   "companies_domain"
     t.integer  "companies_purchase_order"
+    t.string   "companies_report_email1"
+    t.string   "companies_report_email2"
+    t.string   "companies_report_email3"
+    t.string   "companies_report_email4"
+    t.string   "companies_report_email5"
+    t.string   "companies_report_email6"
+    t.string   "companies_report_email7"
+    t.string   "companies_report_email8"
   end
 
 end

@@ -6,6 +6,7 @@
 <%= f.label :companies_domain, 'Domain' %><br>
 <%= f.text_field :companies_domain %><br>
 <br>
+<p><strong>Contact Person:</strong></p>
 <%= f.label :companies_contact_name, 'Contact Name' %><br>
 <%= f.text_field :companies_contact_name %><br>
 <br>
@@ -15,6 +16,17 @@
 <%= f.label :companies_contact_email, 'Contact Email' %><br>
 <%= f.text_field :companies_contact_email %><br>
 <br>
+<p><strong>Report Recipients:</strong></p>
+<%= f.label :companies_report_email1, 'Email 1' %><br>
+<%= f.text_field :companies_report_email1 %><br>
+<br>
+<%= f.label :companies_report_email2, 'Email 2' %><br>
+<%= f.text_field :companies_report_email2 %><br>
+<br>
+<%= f.label :companies_report_email3, 'Email 3' %><br>
+<%= f.text_field :companies_report_email3 %><br>
+<br>
+<p><strong>Address:</strong></p>
 <%= f.label :companies_street_address, 'Street Address' %><br>
 <%= f.text_field :companies_street_address %><br>
 <br>
@@ -27,6 +39,7 @@
 <%= f.label :companies_zip %><br>
 <%= f.text_field :companies_zip %><br>
 <br>
+<p><strong>Billing Details:</strong></p>
 <%= f.label :companies_taxable %><br>
 <%= f.select :companies_taxable, [['Yes', true], ['No', false]] %><br>
 <br>
